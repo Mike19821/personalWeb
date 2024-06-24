@@ -5,14 +5,17 @@ body, html {
     height: 100%;
     background-color: #333;
     overflow-x: hidden; /* Prevent horizontal overflow */
-}
-
-
-html {
     scroll-behavior: smooth;
 }
 
+
+/* html {
+    scroll-behavior: smooth;
+} */
+
 #navbar {
+    position: absolute;
+    width: 100%;
     transition: top 0.3s;
 }
 

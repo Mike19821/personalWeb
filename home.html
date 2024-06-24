@@ -35,13 +35,14 @@
                 <h1 class="nameIntro">Jinbiao Wei</h1>
                 <h2>About</h2>
                 <h1>Let me introduce myself.</h1>
-                <div class="intro">
+                <div class="intro part">
                     <img src="assets/self3.jpg" alt="Profile Picture" class="profile-picture">
                     <p>I'm a student seeking moonshot in the software development and related sectors. I am keen on participating in the projects that have a real impact. </p>
                 </div>
+            
 
 
-                <h1 class ="secHead" id="education">Education</h1>
+                <h1 class ="secHead part" id="education">Education</h1>
                 <div class="resume-section">
                     <div class="header">
                         <img src="assets/rice-university-logo-png-transparent.png" alt="Rice Logo" class="logo">
@@ -62,7 +63,7 @@
                     </div>
                 </div>
 
-                <div class="timeline-container" id="workExperience">
+                <div class="timeline-container part" id="workExperience">
                     <h1>Work Experiences</h1>
                     <div class="timeline">
                         <div class="timeline-item">
@@ -101,7 +102,7 @@
                     </div>
                 </div>
 
-                <div class="projects-section" id="projects">
+                <div class="projects-section part" id="projects">
                     <h1 >Relevant Projects</h1>
                     <div class="project-card">
                         <img src="assets/ar.png" alt="ar" class="project-image ar-project-image">
@@ -142,7 +143,7 @@
                 </div>
 
 
-                <div class="details" id="skills">
+                <div class="details part" id="skills">
                     <!-- <div class="profile">
                         <h3>Profile</h3>
                         <p>Currently I have a job, but am open to a new software engineering/product owner/startup opportunities. If you think I'm a good fit, please contact me via <a href="mailto:sunnybd97@gmail.com">sunnybd97@gmail.com</a>.</p>
@@ -264,36 +265,69 @@
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script>
-        let lastScrollTop = 0;
-        const navbar = document.getElementById('navbar');
+    //     let lastScrollTop = 0;
+    //     const navbar = document.getElementById('navbar');
 
 
-        $(window).on('scroll', function() {
-        console.log("scrolllllllllllllllllll");
-        let scrollTop = $(this).scrollTop();
-        if (scrollTop > lastScrollTop) {
-            // Scrolling down
-            navbar.style.top = '-70px'; // Adjust this value to the height of your navbar
-        } else {
-            // Scrolling up
-            navbar.style.top = '0';
-        }
-        lastScrollTop = scrollTop;
-    });
+    //     $(window).on('scroll', function() {
+    //     console.log("scrolllllllllllllllllll");
+    //     let scrollTop = $(this).scrollTop();
+    //     if (scrollTop > lastScrollTop) {
+    //         // Scrolling down
+    //         navbar.style.top = '-70px'; // Adjust this value to the height of your navbar
+    //     } else {
+    //         // Scrolling up
+    //         navbar.style.top = '0';
+    //     }
+    //     lastScrollTop = scrollTop;
+    // });
 
 
 
         $("#nav a").on("click", function (event) {
-            console.log("pppppppppppppppppppppp");
-            event.preventDefault();
-            var target = $(this).attr("href");
-            var position = $(target).offset().top;
-            $("html, body").animate({ scrollTop: position }, 1000);
+            // event.preventDefault();
+            // var target = $(this).attr("href");
+            // var position = $(target).offset().top;
+            // $("html, body").animate({ scrollTop: position }, 1000);
 
             var position = $(this).parent().position();
             var width = $(this).parent().width();
-            $("#nav .slide1").css({ opacity: 1, left: +position.left, width: width });
+            // $("#nav .slide1").css({ opacity: 1, left: +position.left, width: width });
         });
+
+
+        // const io=new IntersectionObserver((entries)=>{
+        //     let entry = entries.reduce((a,b)=>{
+        //         return a.intersectionRatio>b.intersectionRatio?a:b;
+        //     });
+
+        //     document.querySelectorAll('li').forEach((li)=>{
+        //         li.classList.remove('active');
+        //     });
+        //     let id = entry.target.getAttribute('id');
+        //     console.log(id);
+        // let activeLink = document.querySelector('li a[href="#' + id + '"]');
+        
+        // if (activeLink) {
+        //     activeLink = activeLink.parentElement;
+        //     activeLink.classList.add('active');
+
+        //     // Update the position and width of the slide1 element
+        //     var position = $(activeLink).position();
+        //     var width = $(activeLink).width();
+        //     $("#nav .slide1").css({ opacity: 1, left: +position.left, width: width });
+        // }
+        // },{
+        //     root:null,
+        //     rootMargin:'0px',
+        //     threshold:0.
+        // });
+
+        // const section = document.querySelectorAll('.part');
+        // console.log(section);
+        // section.forEach((section)=>{
+        //     io.observe(section);
+        // });
 
         $("#nav a").on("mouseover", function () {
             var position = $(this).parent().position();
@@ -307,7 +341,7 @@
 
         var currentWidth = $("#nav li:nth-of-type(3) a").parent("li").width();
         var current = $("li:nth-of-type(3) a").position();
-        $("#nav .slide1").css({ left: +current.left, width: currentWidth });
+        // $("#nav .slide1").css({ left: +current.left, width: currentWidth });
     </script>
 </body>
 </html>
