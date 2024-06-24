@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+ES:wght@100..400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="top" id="navbar">
+            <div id="name">Jinbiao Wei</div>
+
+            <ul id="nav">
+                <li class="slide1"></li>
+                <li class="slide2"></li>
+                <li><a href="#introduction">Introduction</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#workExperience">Work Experiences</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+            </ul>
+        </header>
+        <main>
+            <!-- <div class="des">
+                <h1 class="nameIntro">Jinbiao Wei</h1>
+                <p class="description">
+                    
+                </p>
+            </div> -->
+            <section id="introduction"class="about-section">
+                <h1 class="nameIntro">Jinbiao Wei</h1>
+                <h2>About</h2>
+                <h1>Let me introduce myself.</h1>
+                <div class="intro">
+                    <img src="assets/self3.jpg" alt="Profile Picture" class="profile-picture">
+                    <p>I'm a student seeking moonshot in the software development and related sectors. I am keen on participating in the projects that have a real impact. </p>
+                </div>
+
+
+                <h1 class ="secHead" id="education">Education</h1>
+                <div class="resume-section">
+                    <div class="header">
+                        <img src="assets/rice-university-logo-png-transparent.png" alt="Rice Logo" class="logo">
+                        <div class="title">
+                            <h1>Rice University</h1>
+                            <h2>B.S. Computer Science</h2>
+                            <h2>B.S. Mathematics</h2>
+                            <p>GPA 3.82/4.0</p>
+                        </div>
+                    </div>
+                    <div class="coursework">
+                        <h3>Courseworks</h3>
+                        <ul>
+                            <li><strong>Software development</strong> - Distributed Program Construction, Concurrent Program Design, Introduction to Program Design, Principles of Parallel Programming, Web Development.</li>
+                            <li><strong>Machine Learning And AI</strong> - Machine Learning: Concepts and Techniques, Statistical Machine Learning, Intro to Computer Vision, Algorithm Robotics </li>
+                            <li><strong>Algorithms</strong> - Probalistic Algorithms and Data Structures, Computational Thinking, Algorithm Thinking, Reasoning about Algorithms</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-container" id="workExperience">
+                    <h1>Work Experiences</h1>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-image">
+                                <img src="assets/ecovacs-home.svg" alt="Company Logo 1">
+                            </div>
+                            <div class="timeline-content">
+                                <h2>Enterprise Application System Development Intern</h2>
+                                <p class="date">May 2024 - June 2024</p>
+                                <h3>Ecovacs</h3>
+                                <p>Utilized Spring Boot and Maven to build and deploy a scalable enterprise-level application that handles approximately 20 types of permissions to reduce manual intervention. Developed the permission management system, expediting approval processes by 70% from the monthly report. Streamlined database interactions with Spring Data JPA, creating efficient manipulation processes that supported the development of a RESTful API for automating the permission granting process.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-image">
+                                <img src="assets/linde1.jpg" alt="Company Logo 1">
+                            </div>
+                            <div class="timeline-content">
+                                <h2>Software Engineer Internship</h2>
+                                <p class="date">May 2023 - August 2023</p>
+                                <h3>Linde Inc.</h3>
+                                <p>Developed and implemented an automated system to validate reported data from third-party companies against internal files, resulting in a 60% increase in validation speed. Developed full-stack optimization web applications using Flask in Python, and using React for the frontend. Conducted weekly meetings with both the financial department and the IT development department to gather requirements and discuss changes.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-image">
+                                <img src="assets/askalora.jpeg" alt="Company Logo 1">
+                            </div>
+                            <div class="timeline-content">
+                                <h2>Backend developer Internship</h2>
+                                <p class="date">March 2023 - December 2023</p>
+                                <h3>AskAlora AI</h3>
+                                <p>Developed the Spring Boot backend and part of the flutter frontend for an educational application, the characters in the app harness unique AI personalities enhanced by NLP models, designed to educate and engage with users. Involved in refining and enhancing the application to ensure cross-platform functionality, with the current version undergoing rigorous beta testing on TestFlight with an engaged community of over 100 testers.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="projects-section" id="projects">
+                    <h1 >Relevant Projects</h1>
+                    <div class="project-card">
+                        <img src="assets/ar.png" alt="ar" class="project-image ar-project-image">
+                        <div class="project-content">
+                            <h2>AR Guided TBP capturing</h2>
+                            <p>Developed a React Native mobile application which utilizes Augmented Reality (AR) to guide users to position their bodies in the predefined pose and take the Total Body Photographs, thus enhancing the quality and consistency of images for dermatological diagnosis. 
+                                Managing a diverse project team across UI/UX design, AR development, cloud infrastructure, and data security disciplines. Leading the project through all phases from concept, design, development, testing, to deployment.
+                                </p>
+                            <div class="project-tags">
+                                <span>JavaScript</span>
+                                <span>React Native</span>
+                                <span>Flask</span>
+                                <span>MongoDB</span>
+                                <span>AR</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <img src="assets/chatApp.png" alt="Spotify Profile" class="project-image chatApp-project-image">
+                        <div class="project-content">
+                            <h2>Feature-riched chat application project</h2>
+                            <p>Developed both the frontend and backend for a feature-rich concurrent chat web application using TypeScript and Java, adhering to the MVC (Model-View-Controller) design pattern, enabling users to create and delete channels, send reactions, post messages, images visible to all platform users, and update profile information, etc.
+                                Successfully deployed the application on Amazon Cloud Services using Heroku, and implemented image upload functionality with automatic conversion and storage integration on Google Cloud Platform.                                
+                                </p>
+                            <div class="project-tags">
+                                <span>TypeScript</span>
+                                <span>MVC Model</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <img src="assets/nlp.png" alt="Halcyon Theme" class="project-image">
+                        <div class="project-content">
+                            <h2>Evaluating LLMs for Visio-Linguistic Compositional Tasks</h2>
+                            <p>This project evaluated the capabilities of Large Language Models (LLMs) in visio-linguistic skills and compositional reasoning using synthetic data for open-domain visual question answering. By creating a 2D dataset with geometric shapes and attributes, the study assessed skills like existence, position, counting, and relational understanding. The methodology involves generating images with known ground truth, creating rule-based textual descriptions, and prompting LLMs to infer coordinates and locations. Evaluations compared LLM outputs to the ground truth, with additional tasks exploring spatial reasoning in a 2D maze. Language models used include BLOOM, GPT-J-6B, GPT-Neo, and FLAN-T5-XXL.	</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="details" id="skills">
+                    <!-- <div class="profile">
+                        <h3>Profile</h3>
+                        <p>Currently I have a job, but am open to a new software engineering/product owner/startup opportunities. If you think I'm a good fit, please contact me via <a href="mailto:sunnybd97@gmail.com">sunnybd97@gmail.com</a>.</p>
+                        <p><strong>Full Name:</strong> Sunwoo Kang</p>
+                        <p><strong>Birth Date:</strong> July 30, 1997</p>
+                        <p><strong>Email:</strong> <a href="mailto:sunnybd97@gmail.com">sunnybd97@gmail.com</a></p>
+                    </div> -->
+                    <div class="skills-section">
+                        <h1>Softare Development Skills</h1>
+                        <p>Below are some of my skills, and I'm always looking to learn more.</p>
+                        <div class="skills-grid">
+                            <div class="skill-card">
+                                <img src="assets/Java.png" alt="Icon 1">
+                                <h2>Java</h2>
+                                <p>I have experience in developing enterprise-level applications using Java, particularly with the Spring Boot framework. I am proficient in object-oriented programming, multithreading, and design patterns to create robust and scalable software solutions.</p>
+                            </div>
+                            <div class="skill-card">
+                                <img src="assets/python.png" alt="Icon 2">
+                                <h2>Python</h2>
+                                <p>I am proficient in Python programming for data analysis, automation, and web development. I have experience using Flask to build and deploy web applications, as well as utilizing Python for machine learning and artificial intelligence projects. I am familiar with libraries such as Pandas, NumPy, and Matplotlib for data manipulation and visualization.</p>
+                            </div>
+                            <div class="skill-card">
+                                <img src="assets/java-script.png" alt="Icon 3">
+                                <h2>JavaScript</h2>
+                                <p>I am skilled in JavaScript for front-end web development, creating dynamic and interactive user interfaces. I have experience with ES6+ features and frameworks like React and Redux for building modern web applications.</p>
+                            </div>
+                            <div class="skill-card">
+                                <img src="assets/database.png" alt="Icon 4">
+                                <h2>SQL</h2>
+                                <p>I am adept at writing complex SQL queries for data manipulation, retrieval, and analysis. I have experience working with various SQL databases, including Oracle, MySQL, NoSQL, to manage and optimize database performance.</p>
+                            </div>
+                            <div class="skill-card">
+                                <img src="assets/html.png" alt="Icon 5">
+                                <h2>HTML & CSS</h2>
+                                <p>I am proficient in using HTML and CSS to create responsive and visually appealing web pages. I am skilled in modern CSS techniques, including Flexbox and CSS Grid, to design layouts that work across different devices and screen sizes.</p>
+                            </div>
+                            <div class="skill-card">
+                                <img src="assets/springboot.png" alt="Icon 6">
+                                <h2>Spring Boot</h2>
+                                <p>I have developed robust backend services and RESTful APIs using Spring Boot. I am familiar with Spring ecosystem components like Spring Data, Spring Security, and Spring MVC to build comprehensive enterprise solutions.</p>
+                            </div>
+                            <div class="skill-card">
+                                <img src="assets/atom.png" alt="Icon 6">
+                                <h2>React</h2>
+                                <p>I have experience in building dynamic web applications using React, focusing on component-based architecture and state management. I am skilled in using Redux for managing application state and ensuring predictable state changes.</p>
+                            </div>
+                            <div class="skill-card">
+                                <img src="assets/smartphone.png" alt="Icon 6">
+                                <h2>Flutter</h2>
+                                <p>I have built cross-platform mobile applications using Flutter, leveraging its widget-based architecture for seamless UI design and consistent performance across iOS and Android platforms.</p>
+                            </div>                            
+                        </div>
+                    </div>
+                    <div class="skills">
+                        <h3>Skills Level</h3>
+                        <p>I'm a cell-like independent teamworker, strong in research and coding. My areas of expertise are computer science, bioinformatics, and genetics. Below are highlights of my technical skills:</p>
+                        <div class="skill">
+                            <p>Java</p>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 80%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <p>JavaScript</p>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 80%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <p>Spring/Spring Boot</p>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 80%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <p>React</p>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 80%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <p>Python</p>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 70%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <p>HTML & CSS</p>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 70%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <p>React Native</p>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 60%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <p>SQL</p>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 50%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <p>Flutter</p>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 40%;"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <footer class="footer">
+                <p>&copy; 2024 Jinbiao Wei. All rights reserved.</p>
+            </footer>
+        </main>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        let lastScrollTop = 0;
+        const navbar = document.getElementById('navbar');
+
+
+        $(window).on('scroll', function() {
+        console.log("scrolllllllllllllllllll");
+        let scrollTop = $(this).scrollTop();
+        if (scrollTop > lastScrollTop) {
+            // Scrolling down
+            navbar.style.top = '-70px'; // Adjust this value to the height of your navbar
+        } else {
+            // Scrolling up
+            navbar.style.top = '0';
+        }
+        lastScrollTop = scrollTop;
+    });
+
+
+
+        $("#nav a").on("click", function (event) {
+            console.log("pppppppppppppppppppppp");
+            event.preventDefault();
+            var target = $(this).attr("href");
+            var position = $(target).offset().top;
+            $("html, body").animate({ scrollTop: position }, 1000);
+
+            var position = $(this).parent().position();
+            var width = $(this).parent().width();
+            $("#nav .slide1").css({ opacity: 1, left: +position.left, width: width });
+        });
+
+        $("#nav a").on("mouseover", function () {
+            var position = $(this).parent().position();
+            var width = $(this).parent().width();
+            $("#nav .slide2").css({ opacity: 1, left: +position.left, width: width }).addClass("squeeze");
+        });
+
+        $("#nav a").on("mouseout", function () {
+            $("#nav .slide2").css({ opacity: 0 }).removeClass("squeeze");
+        });
+
+        var currentWidth = $("#nav li:nth-of-type(3) a").parent("li").width();
+        var current = $("li:nth-of-type(3) a").position();
+        $("#nav .slide1").css({ left: +current.left, width: currentWidth });
+    </script>
+</body>
+</html>
